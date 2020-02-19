@@ -4,7 +4,7 @@ import AdditionalFeature from './AdditionalFeature';
 import { addFeature } from '../actions/addFeature'
 
 const AdditionalFeatures = props => {
-  console.log(props)
+  // console.log(props)
   return (
     
     <div className="content">

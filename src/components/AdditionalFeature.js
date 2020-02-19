@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { addFeature } from '../actions/addFeature'
+import { addFeature } from '../actions'
 import AddedFeature from './AddedFeature';
 
 
-const AdditionalFeature = props => {
+const AdditionalFeature = (props) => {
   console.log(props)
   return (
     <li>
@@ -21,8 +21,10 @@ const AdditionalFeature = props => {
 
 const mapStateToProps = state => {
   return {
-    additionalFeatures: state.additionalFeatures
-    // state
+    
+    state,
+    // action: addFeature
+
   }
 }
 

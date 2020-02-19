@@ -6,6 +6,7 @@ import AddedFeature from './AddedFeature';
 
 
 const AddedFeatures = props => {
+  console.log('add', props)
   return (
     <div className="content">
       <h6>Added features:</h6>
@@ -22,14 +23,11 @@ const AddedFeatures = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    // additionalFeatures: state.additionalFeatures
-    state
-  }
-}
+// const mapStateToProps = state => {
+//   return {
+//     // additionalFeatures: state.additionalFeatures
+//     state
+//   }
+// }
 
-export default connect(
-  mapStateToProps,
-  {addFeature}
-)(AddedFeatures);
+export default AddedFeatures
